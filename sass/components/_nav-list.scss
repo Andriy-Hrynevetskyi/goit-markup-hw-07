@@ -1,0 +1,36 @@
+.nav-list {
+    @extend %list;
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link {
+        @extend %link;
+        display: inline-block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: map-get($colors ,"main-title-color");
+        @include transition (color);
+    }
+    &__link:focus,
+    &__link:hover {
+        color: map-get($colors , "accent-color" );
+    }
+}
+.nav-list__link--current {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        display: inline-flex;
+        width: 100%;
+        height: 4px;
+        background-color: map-get($colors , "accent-color" );
+        border-radius: 2px;
+    }
+}

@@ -1,0 +1,24 @@
+.logo {
+    @extend %link;
+    display: inline-flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: map-get($colors , "accent-color" );
+    @include transition(color);
+        &--black {
+        color: map-get($colors , "logo-secondary-color" );
+        @include transition(color);
+        // Тут просто експеримент з фокусом/ховером ,бо на макеті його немає
+        }
+        &:hover,
+        &:focus,
+        &:hover &--black,
+        &:focus &--black {
+            color: map-get($colors , "btn-hover-focus-color" );
+        }
+    }

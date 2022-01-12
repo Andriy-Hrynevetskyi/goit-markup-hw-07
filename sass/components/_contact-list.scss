@@ -1,0 +1,27 @@
+.contact-list {
+    @extend %list;
+    display: flex;
+    align-items: center;
+    
+        &__item:not(:last-child) {
+            margin-right: 50px;
+        }
+        &__link {
+            @extend %link;
+            display: inline-flex;
+            align-items: center;
+            color: map-get($colors , "main-text-color" );
+            padding-top: 32px;
+            padding-bottom: 32px;
+            @include transition(color)
+            }
+        &__link:focus,
+        &__link:hover {
+            color: map-get($colors , "accent-color" );
+        }
+
+        &__icon {
+            fill: currentcolor;
+            margin-right: 10px;
+            }
+        }

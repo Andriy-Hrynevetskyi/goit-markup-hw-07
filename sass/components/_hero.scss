@@ -1,0 +1,27 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, map-get($colors, "hero-gradient"), map-get($colors, "hero-gradient")),
+    url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: 1600px 600px;
+    background-repeat: no-repeat;
+    background-color: map-get($colors ,"hero-bg");
+}
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: map-get($colors , "main-white-color" );
+}

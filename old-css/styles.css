@@ -53,7 +53,7 @@
 }
 
 .title {
-  margin-top: 0%;
+  margin-top: 0;
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -195,7 +195,7 @@ body {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
   max-width: 700px;
