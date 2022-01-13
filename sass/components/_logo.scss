@@ -3,12 +3,7 @@
     display: inline-flex;
     padding-top: 24px;
     padding-bottom: 25px;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: map-get($colors , "accent-color" );
+    @include font($family: Raleway, $weight: 700, $size: 26px, $height: 1.19, $spacing: 0.03em, $color: map-get($colors, "accent-color"));
     @include transition(color);
         &--black {
         color: map-get($colors , "logo-secondary-color" );

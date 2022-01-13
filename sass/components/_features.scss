@@ -1,0 +1,46 @@
+.features {
+    @extend %section;
+    background-color: map-get($colors, "main-white-color" );
+
+    &__title--visually-hidden {
+        @extend %visually-hidden;
+    }
+    &__list {
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-right: calc(-1 * #{$gap});
+        margin-bottom: calc(-1 * #{$gap});
+    }
+    &__item {
+        margin-right: $gap;
+        margin-bottom: $gap;
+        flex-basis: calc(100% / 4 - #{$gap});
+    }
+    &__wrapper {
+        display: block;
+        height: 120px;
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        padding: 25px 100px;
+        background-color: map-get($colors, "secondary-white-color" );
+    }
+    &__icon {
+        width: 70px;
+        height: 70px;
+    }
+    &__sub-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include font ($weight: 700, $spacing: .03em, $color: map-get($colors, "main-title-color"));
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-top: 0;
+        margin-bottom: 0;
+        @include font($height: 1.71, $spacing: .03em)
+    }
+}
+
