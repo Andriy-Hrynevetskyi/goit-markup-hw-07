@@ -2,7 +2,7 @@
     @extend %link;
     display: inline-flex;
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     @include font($family: Raleway, $weight: 700, $size: 26px, $height: 1.19, $spacing: 0.03em, $color: map-get($colors, "accent-color"));
     @include transition(color);
         &--black {

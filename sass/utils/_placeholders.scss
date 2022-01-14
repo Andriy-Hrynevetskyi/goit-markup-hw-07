@@ -6,7 +6,6 @@
 
 %link {
     text-decoration: none;
-    font:inherit;
 }
 
 %button {
@@ -25,4 +24,14 @@
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+%title {
+    margin: 0;
+}
+%image {
+    display: block;
+    max-width: 100%;
+}
+%text {
+    margin: 0;
 }

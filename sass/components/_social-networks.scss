@@ -1,0 +1,32 @@
+.social-networks {
+    @extend %list;
+    display: inline-flex;
+    align-items: center;
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    &__link {
+        @extend %link;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        border-radius: 50%;
+        color: map-get($colors , "icon-link-color" );
+        @include transition (color);
+        @include transition (background-color);
+    }
+    &__link:hover,
+    &__link:focus {
+        background-color: map-get($colors , "accent-color" );
+        color: map-get($colors , "main-white-color" );
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+}

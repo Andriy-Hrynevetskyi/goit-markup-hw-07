@@ -12,7 +12,7 @@
             align-items: center;
             color: map-get($colors , "main-text-color" );
             padding-top: 32px;
-            padding-bottom: 32px;
+            padding-bottom: 31px;
             @include transition(color)
             }
         &__link:focus,

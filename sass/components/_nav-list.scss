@@ -10,7 +10,7 @@
         @extend %link;
         display: inline-block;
         padding-top: 32px;
-        padding-bottom: 32px;
+        padding-bottom: 31px;
         color: map-get($colors ,"main-title-color");
         @include transition (color);
     }

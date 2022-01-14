@@ -1,0 +1,44 @@
+.specialization {
+    @extend %section;
+    padding-top: 0;
+    background-color: map-get($colors, "main-white-color" );
+
+    &__title {
+        @extend %title;
+        margin-bottom: 50px;
+
+        @include font ($weight: 700, $size: 36px, $height: 1.16, $spacing: .03em ,$color: map-get($colors, "main-title-color"));
+        text-align: center;
+    }
+    &__list {
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: calc(-1 * #{$gap});
+        margin-right: calc(-1 * #{$gap});
+    }
+    &__item {
+        margin-right: $gap;
+        margin-bottom: $gap;
+        flex-basis: calc(100% / 3 - #{$gap});
+    }
+    &__thumb {
+        position: relative;
+    }
+    &__image {
+        @extend %image;
+    }
+    &__description {
+        position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include font ($weight: 700, $spacing: .03em , $color: map-get($colors, main-white-color));
+    text-transform: uppercase;
+    background-color: map-get($colors , secondary-overlay-color );
+    }
+}

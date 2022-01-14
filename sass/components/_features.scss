@@ -32,14 +32,13 @@
         height: 70px;
     }
     &__sub-title {
-        margin-top: 0;
+        @extend %title;
         margin-bottom: 10px;
         @include font ($weight: 700, $spacing: .03em, $color: map-get($colors, "main-title-color"));
         text-transform: uppercase;
     }
     &__text {
-        margin-top: 0;
-        margin-bottom: 0;
+        @extend %text;
         @include font($height: 1.71, $spacing: .03em)
     }
 }
