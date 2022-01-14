@@ -6,7 +6,7 @@
   margin-right: auto;
 }
 
-.nav-list, .contact-list, .features__list, .specialization__list, .team__list, .social-networks {
+.nav-list, .contact-list, .features__list, .specialization__list, .team__list, .social-networks, .clients__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@
   border: none;
 }
 
-.features, .specialization, .team {
+.features, .specialization, .team, .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -34,7 +34,7 @@
   margin: -1px;
 }
 
-.features__sub-title, .specialization__title, .team__title, .team__name {
+.features__sub-title, .specialization__title, .team__title, .team__name, .clients__title {
   margin: 0;
 }
 
@@ -580,5 +580,69 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.clients {
+  background-color: #ffffff;
+}
+
+.clients__title {
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: calc(-1 * 30px);
+  margin-right: calc(-1 * 30px);
+}
+
+.clients__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  -ms-flex-preferred-size: calc(100% / 6 - 30px);
+      flex-basis: calc(100% / 6 - 30px);
+}
+
+.clients__link {
+  color: #afb1b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 92px;
+  width: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients__link:focus, .clients__link:hover {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
+.clients__icon {
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
 }
 /*# sourceMappingURL=main.css.map */

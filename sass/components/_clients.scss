@@ -1,0 +1,46 @@
+.clients {
+    @extend %section;
+    background-color: map-get($colors , "main-white-color" );
+
+    &__title {
+        @extend %title;
+        margin-bottom: 50px;
+
+        @include font ($weight: 700, $size: 36px, $height: 1.16, $spacing: .03em ,$color: map-get($colors,   "main-title-color"));
+        text-align: center;
+    }
+    &__list {
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: calc(-1 * #{$gap});
+        margin-right: calc(-1 * #{$gap});
+    }
+    &__item {
+        margin-right: $gap;
+        margin-bottom: $gap;
+        flex-basis: calc(100% / 6 - #{$gap});
+    }
+    &__link {
+        color: map-get($colors , "icon-link-color" );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92px;
+        width: 100%;
+        border: 1px solid map-get($colors , "icon-link-color" );
+        border-radius: 4px;
+    
+    }
+    &__link:focus,
+    &__link:hover {
+        color: map-get($colors , "accent-color");
+        border-color: map-get($colors , "accent-color");
+    }
+    &__icon {
+        fill: currentColor;
+        width: 106px;
+        height: 60px;
+    }
+}
