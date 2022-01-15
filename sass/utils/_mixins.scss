@@ -1,8 +1,8 @@
-@mixin transition ($property, $duration: 250ms, $function: cubic-bezier(0.4, 0, 0.2, 1), $delay: 0ms) {
+@mixin transition ($property...){
     transition-property: $property ;
-    transition-duration: $duration;
-    transition-timing-function: $function;
-    transition-delay: $delay;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 @mixin font ($family: Roboto, $style: normal, $weight: 400, $size: 14px, $height: 1.14 , $spacing: 0.02em, $color: map-get($colors , "main-text-color")) {
