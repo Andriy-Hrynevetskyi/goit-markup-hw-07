@@ -21,7 +21,7 @@
         width: 100%;
         padding: 15px;
         background-color: inherit;
-        border-radius: 4px;
+        border-radius: $bradius;
         border: 1px solid map-get($colors , "form-border-color" );
         box-shadow: 0px 4px 4px 0px map-get($colors , "form-shadow-color" );
         color: inherit;

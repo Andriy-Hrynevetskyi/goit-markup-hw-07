@@ -30,8 +30,8 @@
         height: 92px;
         width: 100%;
         border: 1px solid map-get($colors , "icon-link-color" );
-        border-radius: 4px;
-        @include transition (color border-color);
+        border-radius: $bradius;
+        @include transition (color,border-color);
     }
     &__link:focus,
     &__link:hover {

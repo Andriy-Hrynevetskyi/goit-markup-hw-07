@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAC,CACN,QAAQ,CAAE,KAAK,CACf,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,gBAAgB,CAAE,eAAkB,CACpC,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,OAAO,CAAC,KAAK,CAAC,4BAA4B,CACtD,UAAU,CAAC,KAAK,CAAC,4BAA4B,CAChD,AACD,AAAA,UAAU,AAAC,CACP,OAAO,CAAE,CAAC,CACV,cAAc,CAAE,IAAI,CACpB,UAAU,CAAE,MAAM,CACrB",
+    "sources": [
+        "../sass/components/-modal-window.scss"
+    ],
+    "names": [],
+    "file": "-modal-window.min.css"
+}

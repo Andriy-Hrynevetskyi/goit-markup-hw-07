@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     min-width: $min-width;
-    border-radius: 4px;
+    border-radius: $bradius;
     @include font($weight: 700, $size: 16px, $height: 1.87, $spacing: .06em, $color:map-get($colors, "main-white-color"));
     cursor: pointer;
     background-color: map-get($colors, "accent-color" );

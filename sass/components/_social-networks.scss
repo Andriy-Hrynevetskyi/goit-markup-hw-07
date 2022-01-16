@@ -16,7 +16,7 @@
         padding: 12px;
         border-radius: 50%;
         color: map-get($colors , "icon-link-color" );
-        @include transition (color background-color);
+        @include transition (color, background-color);
     }
     &__link:hover,
     &__link:focus {
