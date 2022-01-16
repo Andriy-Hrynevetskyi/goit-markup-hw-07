@@ -1,0 +1,21 @@
+.address {
+    @extend %list;
+    min-width: 231px;
+
+    &__item:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    &__link {
+        @extend %link;
+        @include font($height: 1.71, $spacing: .03em, $color:map-get($colors, "footer-link-color") );
+        @include transition (color);
+}
+    &__link--map-link {
+        color: map-get($colors , "main-white-color" );
+    }
+    &__link:focus,
+    &__link:hover {
+        color: map-get($colors , "accent-color" );
+    }
+}
+

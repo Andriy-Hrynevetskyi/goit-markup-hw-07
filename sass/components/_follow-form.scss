@@ -1,0 +1,43 @@
+.follow-form {
+    margin-left: auto;
+    width: 570px;
+
+    &__text {
+        @extend %text;
+        margin-bottom: 20px;
+        @include font ($weight: 700, $spacing: .03em, $color:map-get($colors, "main-white-color"));
+        text-transform: uppercase;
+    }
+    &__container {
+        display: flex;
+    }
+    &__field {
+        position: relative;
+        margin-right: 12px;
+        width: 100%;
+        @include font ($size: 16px, $height: 1.25, $spacing: .03em, $color:map-get($colors, "footer-link-color"));
+    }
+    &__input {
+        width: 100%;
+        padding: 15px;
+        background-color: inherit;
+        border-radius: 4px;
+        border: 1px solid map-get($colors , "form-border-color" );
+        box-shadow: 0px 4px 4px 0px map-get($colors , "form-shadow-color" );
+        color: inherit;
+        font-style: inherit;
+        }
+    &__label {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+        font-style: inherit;
+        @include transition(transform);
+        }
+        &__input:focus + &__label,
+        &__input:not(:placeholder-shown) + &__label {
+            transform: translateY(-45px);
+        }
+
+}

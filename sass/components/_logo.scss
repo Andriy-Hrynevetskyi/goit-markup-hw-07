@@ -1,19 +1,31 @@
 .logo {
     @extend %link;
     display: inline-flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
     @include font($family: Raleway, $weight: 700, $size: 26px, $height: 1.19, $spacing: 0.03em, $color: map-get($colors, "accent-color"));
     @include transition(color);
-        &--black {
-        color: map-get($colors , "logo-secondary-color" );
+
+    &__header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    &--header-color {
+    color: map-get($colors , "logo-secondary-color" );
+    @include transition(color);
+    }
+    &__footer {
+        margin-bottom: 20px;
+    }
+    &--footer-color {
+        color: map-get($colors , "main-white-color" );
         @include transition(color);
-        // Тут просто експеримент з фокусом/ховером ,бо на макеті його немає
         }
+        // Тут просто експеримент з фокусом/ховером ,бо на макеті його немає
         &:hover,
         &:focus,
-        &:hover &--black,
-        &:focus &--black {
+        &:hover &--footer-color,
+        &:focus &--footer-color,
+        &:hover &--header-color ,
+        &:focus &---header-color  {
             color: map-get($colors , "btn-hover-focus-color" );
         }
     }

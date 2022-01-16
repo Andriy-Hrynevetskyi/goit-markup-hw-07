@@ -569,6 +569,8 @@ body {
   fill: currentColor;
   margin-left: 10px;
 }
+
+/* Modal-window */
 .backdrop {
   position: fixed;
   top: 0;
@@ -584,7 +586,7 @@ body {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  /* Для чого додавати visibility , якщо і без нього все працює. Крім того visibility треба додатково анімувати? */
+  
 }
 .modal {
   position: absolute;

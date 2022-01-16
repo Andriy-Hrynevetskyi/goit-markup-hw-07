@@ -1,18 +1,25 @@
-.hero__button {
+.hero__btn {
     @include button;
     padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;
-    &:hover,
-    &:focus {
-        background-color: map-get($colors, "btn-hover-focus-color");
-    } 
 }
 
 .follow-btn {
     @include button;
     padding: 10px 28px;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+        margin-left: 10px;
+    }
 }
+.hero__btn:hover,.follow-btn:hover,
+.hero__btn:focus,.follow-btn:focus {
+    background-color: map-get($colors, "btn-hover-focus-color");
+} 
 .modal-btn {
     @include button;
     padding: 10px 55px;

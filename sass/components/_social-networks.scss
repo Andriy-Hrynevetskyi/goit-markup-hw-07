@@ -28,4 +28,13 @@
         height: 20px;
         fill: currentColor;
     }
+    &__link--footer-color {
+        color: map-get($colors , "main-white-color" );
+        background-color: map-get($colors , "footer-link-bg" );
+        @include transition (background-color);
+    }
+    &__link--footer-color:hover,
+    &__link--footer-color:focus {
+        background-color: map-get($colors , "accent-color" );
+    }
 }
