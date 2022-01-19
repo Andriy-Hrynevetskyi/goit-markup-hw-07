@@ -13,37 +13,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container main-nav">
-        <a href="index.html" lang="en" class="logo">Web<span class="header-logo">Studio</span></a>
+      <div class="container header__container">
+        <a href="index.html" lang="en" class="logo logo__header">Web<span class="logo--header-color">Studio</span></a>
         <nav>
-          <ul class="site-nav list">
-            <li class="list-item">
-              <a class="link nav-link" href="./index.html">Студия</a>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link " href="./index.html">Студия</a>
             </li>
-            <li class="list-item">
-              <a class="link nav-link current" href="./portfolio.html">Портфолио</a>
+            <li class="nav-list__item nav-list__link--current">
+              <a class="nav-list__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="list-item"><a class="link nav-link" href="">Контакты</a></li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contact-list list">
-          <li class="list-item">
-            <a class="link contact-link" href="mailto:info@devstudio.com">
-              <svg class="contact-icon" width="16" height="12">
-                <use href="images/symbol-defs.svg#icon-envelope"></use>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__link" href="mailto:info@devstudio.com">
+              <svg class="contact-list__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="list-item">
-            <a class="link contact-link" href="tel:+380961111111">
-              <svg class="contact-icon" width="10" height="16">
-                <use href="images/symbol-defs.svg#icon-smartphone"></use>
+          <li class="contact-list__item">
+            <a class="contact-list__link" href="tel:+380961111111">
+              <svg class="contact-list__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
@@ -53,171 +55,169 @@
     </header>
     <!-- Main -->
     <main>
-      <section class="section">
+      <section class="portfolio">
         <div class="container">
-          <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="list btn-list">
-            <li class="btn-item"><button class="portfolio-btn" type="button">Все</button></li>
-            <li class="btn-item"><button class="portfolio-btn" type="button">Веб-сайты</button></li>
-            <li class="btn-item">
-              <button class="portfolio-btn" type="button">Приложения</button>
-            </li>
-            <li class="btn-item"><button class="portfolio-btn" type="button">Дизайн</button></li>
-            <li class="btn-item"><button class="portfolio-btn" type="button">Маркетинг</button></li>
+          <h1 class="portfolio__title">Portfolio</h1>
+          <ul class="filter-list filter-list__portfolio">
+            <li class="filter-list__item"><button class="filter-list__btn" type="button">Все</button></li>
+            <li class="filter-list__item"><button class="filter-list__btn" type="button">Веб-сайты</button></li>
+            <li class="filter-list__item"><button class="filter-list__btn" type="button">Приложения</button></li>
+            <li class="filter-list__item"><button class="filter-list__btn" type="button">Дизайн</button></li>
+            <li class="filter-list__item"><button class="filter-list__btn" type="button">Маркетинг</button></li>
           </ul>
 
-          <ul class="list gallery">
-            <li class="flex-item">
-              <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/portfolio-picture-1.jpg" alt="img" />
-                  <div class="card-overlay">
-                    <p class="text-overlay">
+          <ul class="portfolio-grid">
+            <li class="portfolio-grid__item">
+              <div class="project">
+                <div class="project__thumb">
+                  <img class="project__img" src="./images/portfolio-picture-1.jpg" alt="img" />
+                  <div class="project__overlay">
+                    <p class="project__description">
                       Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                       конкурентов.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-content">
-                  <h2 class="portfolio-title">Технокряк</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="project__content">
+                  <h2 class="project__title">Технокряк</h2>
+                  <p class="project__short-dscrpt">Веб-сайт</p>
                 </div>
               </div>
             </li>
-            <li class="flex-item">
-              <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/portfolio-picture-2.jpg" alt="img" />
-                  <div class="card-overlay">
-                    <p class="text-overlay">
+            <li class="portfolio-grid__item">
+              <div class="project">
+                <div class="project__thumb">
+                  <img class="project__img" src="./images/portfolio-picture-2.jpg" alt="img" />
+                  <div class="project__overlay">
+                    <p class="project__description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, alias.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-content">
-                  <h2 class="portfolio-title">
+                <div class="project__content">
+                  <h2 class="project__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="portfolio-text">Дизайн</p>
+                  <p class="project__short-dscrpt">Дизайн</p>
                 </div>
               </div>
             </li>
-            <li class="flex-item">
-              <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/portfolio-picture-3.jpg" alt="img" />
-                  <div class="card-overlay">
-                    <p class="text-overlay">
+            <li class="portfolio-grid__item">
+              <div class="project">
+                <div class="project__thumb">
+                  <img class="project__img" src="./images/portfolio-picture-3.jpg" alt="img" />
+                  <div class="project__overlay">
+                    <p class="project__description">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, neque.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-content">
-                  <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="portfolio-text">Приложение</p>
+                <div class="project__content">
+                  <h2 class="project__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="project__short-dscrpt">Приложение</p>
                 </div>
               </div>
             </li>
-            <li class="flex-item">
-              <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/portfolio-picture-4.jpg" alt="img" />
-                  <div class="card-overlay">
-                    <p class="text-overlay">
+            <li class="portfolio-grid__item">
+              <div class="project">
+                <div class="project__thumb">
+                  <img class="project__img" src="./images/portfolio-picture-4.jpg" alt="img" />
+                  <div class="project__overlay">
+                    <p class="project__description">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, provident
                       inventore. Possimus nesciunt blanditiis consequuntur.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-content">
-                  <h2 class="portfolio-title">Проект <span lang="en">Prime</span></h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                <div class="project__content">
+                  <h2 class="project__title">Проект <span lang="en">Prime</span></h2>
+                  <p class="project__short-dscrpt">Маркетинг</p>
                 </div>
               </div>
             </li>
-            <li class="flex-item">
-              <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/portfolio-picture-5.jpg" alt="img" />
-                  <div class="card-overlay">
-                    <p class="text-overlay">
+            <li class="portfolio-grid__item">
+              <div class="project">
+                <div class="project__thumb">
+                  <img class="project__img" src="./images/portfolio-picture-5.jpg" alt="img" />
+                  <div class="project__overlay">
+                    <p class="project__description">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos voluptatum
                       laborum illo fugiat ipsam voluptas?
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-content">
-                  <h2 class="portfolio-title">Проект <span lang="en">Boxes</span></h2>
-                  <p class="portfolio-text">Приложение</p>
+                <div class="project__content">
+                  <h2 class="project__title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="project__short-dscrpt">Приложение</p>
                 </div>
               </div>
             </li>
-            <li class="flex-item">
-              <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/portfolio-picture-6.jpg" alt="img" />
-                  <div class="card-overlay">
-                    <p class="text-overlay">
+            <li class="portfolio-grid__item">
+              <div class="project">
+                <div class="project__thumb">
+                  <img class="project__img" src="./images/portfolio-picture-6.jpg" alt="img" />
+                  <div class="project__overlay">
+                    <p class="project__description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, harum. Autem
                       omnis minima consectetur nesciunt.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-content">
-                  <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="project__content">
+                  <h2 class="project__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="project__short-dscrpt">Веб-сайт</p>
                 </div>
               </div>
             </li>
-            <li class="flex-item">
-              <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/portfolio-picture-7.jpg" alt="img" />
-                  <div class="card-overlay">
-                    <p class="text-overlay">
+            <li class="portfolio-grid__item">
+              <div class="project">
+                <div class="project__thumb">
+                  <img class="project__img" src="./images/portfolio-picture-7.jpg" alt="img" />
+                  <div class="project__overlay">
+                    <p class="project__description">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde magni quis
                       eaque laboriosam earum pariatur!
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-content">
-                  <h2 class="portfolio-title">Издание <span lang="en">Limited Edition</span></h2>
-                  <p class="portfolio-text">Дизайн</p>
+                <div class="project__content">
+                  <h2 class="project__title">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="project__short-dscrpt">Дизайн</p>
                 </div>
               </div>
             </li>
-            <li class="flex-item">
-              <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/portfolio-picture-8.jpg" alt="img" />
-                  <div class="card-overlay">
-                    <p class="text-overlay">
+            <li class="portfolio-grid__item">
+              <div class="project">
+                <div class="project__thumb">
+                  <img class="project__img" src="./images/portfolio-picture-8.jpg" alt="img" />
+                  <div class="project__overlay">
+                    <p class="project__description">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, quisquam.
                       Consequuntur error saepe voluptatem ipsum.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-content">
-                  <h2 class="portfolio-title">Проект <span lang="en">LAB</span></h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                <div class="project__content">
+                  <h2 class="project__title">Проект <span lang="en">LAB</span></h2>
+                  <p class="project__short-dscrpt">Маркетинг</p>
                 </div>
               </div>
             </li>
-            <li class="flex-item">
-              <div class="card">
-                <div class="card-thumb">
-                  <img src="./images/portfolio-picture-9.jpg" alt="img" />
-                  <div class="card-overlay">
-                    <p class="text-overlay">
+            <li class="portfolio-grid__item">
+              <div class="project">
+                <div class="project__thumb">
+                  <img class="project__img" src="./images/portfolio-picture-9.jpg" alt="img" />
+                  <div class="project__overlay">
+                    <p class="project__description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatum
                       rerum eos molestias illo praesentium.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-content">
-                  <h2 class="portfolio-title" lang="en">Growing Business</h2>
-                  <p class="portfolio-text">Приложение</p>
+                <div class="project__content">
+                  <h2 class="project__title" lang="en">Growing Business</h2>
+                  <p class="project__short-dscrpt">Приложение</p>
                 </div>
               </div>
             </li>
@@ -227,55 +227,53 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-box">
-        <div class="footer-nav">
-          <div class="footer-logotype">
-            <a href="/" lang="en" class="logo link">Web<span class="footer-logo">Studio</span></a>
-          </div>
-          <address class="address">
-            <a
-              class="link address"
-              href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&ehbc=2E312F"
-              target="blank"
-              >г. Киев, пр-т Леси Украинки, 26></a
-            >
-          </address>
-          <ul class="list">
-            <li class="contact-item">
-              <a class="footer-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <div class="container footer__container">
+        <div class="footer__navigation">
+          <a href="/" lang="en" class="logo logo__footer">Web<span class="logo--footer-color">Studio</span></a>
+          <address>
+            <ul class="address">
+              <li class="address__item">
+              <a class="address__link address__link--map-link"
+                href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&ehbc=2E312F"
+                target="blank">
+                г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+                <li class="address__item">
+              <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="contact-item">
-              <a class="footer-contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="address__item">
+              <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
+        </address>
         </div>
-        <div class="follow-box">
-          <p class="follow-text">присоединяйтесь</p>
-          <ul class="social-networks list">
-            <li class="list-item">
-              <a class="social-link link follow-link" href="">
-                <svg class="social-icon">
+        <div>
+          <p class="follow__text">присоединяйтесь</p>
+          <ul class="social-networks">
+            <li class="social-networks__item">
+              <a class="social-networks__link social-networks__link--footer-color" href="">
+                <svg class="social-networks__icon">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-item">
-              <a class="social-link link follow-link" href="">
-                <svg class="social-icon">
+            <li class="social-networks__item">
+              <a class="social-networks__link social-networks__link--footer-color" href="">
+                <svg class="social-networks__icon">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-item">
-              <a class="social-link link follow-link" href="">
-                <svg class="social-icon">
+            <li class="social-networks__item">
+              <a class="social-networks__link social-networks__link--footer-color" href="">
+                <svg class="social-networks__icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-item">
-              <a class="social-link link follow-link" href="">
-                <svg class="social-icon">
+            <li class="social-networks__item">
+              <a class="social-networks__link social-networks__link--footer-color" href="">
+                <svg class="social-networks__icon">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -283,15 +281,15 @@
           </ul>
         </div>
         <form class="follow-form" name="follow-form" autocomplete="off">
-          <p class="follow-text">Подпишитесь на рассылку</p>
-          <div class="form-box">
-            <div class="form-field">
-              <input type="email" class="form-input" name="mail" id="follow-mail" placeholder=" " />
-              <label class="form-label" for="follow-mail">E-mail</label>
+          <p class="follow-form__text">Подпишитесь на рассылку</p>
+          <div class="follow-form__container">
+            <div class="follow-form__field">
+              <input type="email" class="follow-form__input" name="mail" id="follow-mail" placeholder=" " />
+              <label class="follow-form__label" for="follow-mail">E-mail</label>
             </div>
             <button class="follow-btn" type="submit">
               Подписаться
-              <svg class="send-icon">
+              <svg class="follow-btn__icon">
                 <use href="images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>

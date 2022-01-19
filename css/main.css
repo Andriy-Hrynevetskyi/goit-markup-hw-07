@@ -1035,9 +1035,15 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 1px solid #f5f4fa;
+  border: 1px solid #212121;
   margin-right: 8px;
   fill: #ffffff;
+  -webkit-transition-property: border-color, background-color;
+  transition-property: border-color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form__checkbox:checked + .modal-form__label--policy > .modal-form__checkbox-icon {

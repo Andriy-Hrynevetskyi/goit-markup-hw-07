@@ -1,0 +1,74 @@
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * #{$gap});
+    margin-bottom: calc(-1 * #{$gap});
+    @extend %list;
+
+    &__item {
+        flex-basis: calc(100% / 3 - #{$gap});
+        margin-bottom: #{$gap};
+        margin-right: #{$gap};
+    }
+}
+.project {
+    @include transition(box-shadow);
+    overflow: hidden;
+
+    &:focus,
+    &:hover {
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+    }
+    &:focus &__overlay,
+    &:hover &__overlay {
+    transform: translateY(0);
+    }
+    &__thumb {
+        position: relative;
+        background-color: map-get($colors , "main-white-color" );
+        overflow: hidden;
+    }
+
+    &__img {
+        @extend %image;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(100%);
+        padding: 63px 24px;
+        width: 100%;
+        height: 100%;
+        background-color: map-get($colors , "overlay-bg" );
+        @include transition(transform);
+    }
+
+    &__description {
+        position: absolute;
+        margin: 0;
+        max-width: 322px;
+        @include font($size: 18px,$height: 1.56, $spacing: .03em, $color: map-get($colors, "main-white-color"));
+    }
+
+    &__content {
+        padding-top: 19px;
+        padding-bottom: 19px;
+        padding-left: 24px;
+        padding-right: 24px;
+        background-color: map-get($colors , "main-white-color" );
+        border: 1px solid map-get($colors , "portfolio-card-bg" );
+    }
+    &__title {
+        @extend %title;
+        margin-bottom: 4px;
+        @include font ($weight: 700, $size: 18px, $height: 2, $spacing: .06em, $color: map-get($colors, "main-title-color"));
+    }
+    &__short-dscrpt {
+        @extend %text;
+        @include font ($size: 16px, $height: 1.87, $spacing: .03em);
+    }
+}
