@@ -123,7 +123,7 @@
 .logo:hover .logo--footer-color,
 .logo:focus .logo--footer-color,
 .logo:hover .logo--header-color,
-.logo:focus .logo---header-color {
+.logo:focus .logo--header-color {
   color: #188ce8;
 }
 
@@ -782,6 +782,10 @@
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: inherit;
   font-style: inherit;
+}
+
+.follow-form__input:focus {
+  outline: none;
 }
 
 .follow-form__label {

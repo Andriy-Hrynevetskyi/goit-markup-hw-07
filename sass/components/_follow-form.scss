@@ -27,6 +27,9 @@
         color: inherit;
         font-style: inherit;
         }
+    &__input:focus {
+        outline: none;
+    }
     &__label {
         position: absolute;
         top: 50%;
