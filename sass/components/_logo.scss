@@ -25,7 +25,7 @@
         &:hover &--footer-color,
         &:focus &--footer-color,
         &:hover &--header-color ,
-        &:focus &---header-color  {
+        &:focus &--header-color  {
             color: map-get($colors , "btn-hover-focus-color" );
         }
     }
